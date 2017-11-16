@@ -26,8 +26,11 @@ set NUM_LANES 2
 #  R621: R0 -> DNI
 #  R633: R0 -> DNI
 
-set_location_assignment PIN_N29   -to rx_ref_clk            ; ## D04 FMCA_HPC_GBTCLK0_M2C_P
-set_location_assignment PIN_N28   -to "rx_ref_clk(n)"       ; ## D05 FMCA_HPC_GBTCLK0_M2C_N
+#set_location_assignment PIN_N29   -to rx_ref_clk            ; ## D04 FMCA_HPC_GBTCLK0_M2C_P
+#set_location_assignment PIN_N28   -to "rx_ref_clk(n)"       ; ## D05 FMCA_HPC_GBTCLK0_M2C_N
+
+set_location_assignment PIN_J29   -to rx_ref_clk            ; ## REFCLK_GXBL1I_CHTP
+set_location_assignment PIN_J28   -to "rx_ref_clk(n)"       ; ## REFCLK_GXBL1I_CHTN
 
 ## A18 FMCA_HPC_DP05_M2C_P / A19 FMCA_HPC_DP05_M2C_N
 ## B16 FMCA_HPC_DP06_M2C_P / B17 FMCA_HPC_DP06_M2C_N
